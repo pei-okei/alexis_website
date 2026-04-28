@@ -1,0 +1,63 @@
+/* General settings */
+* {
+	/* Fixing the box-sizing issue */
+	/* Explanation: https://www.w3schools.com/css/css3_box-sizing.asp */
+	box-sizing: border-box;
+
+	/* Setting all default margin and padding to 0, because elements have pretty arbitary initial settings */
+	margin: 0;
+	padding: 0;
+
+	/* Smooth scrolliing when anchor links pressed */
+	scroll-behavior: smooth;
+}
+
+[contenteditable="true"]:active, [contenteditable="true"]:focus
+{
+    border:none;
+    outline:none;
+}
+
+
+/* text styles */ 
+h1 {
+    color:#0000FF;
+    font-family: Helvetica;
+    transform:scale(1.0,1.5);
+}
+
+p {
+    color:#0000FF;
+    font-family: Helvetica;
+    font-weight:400;
+}
+
+ul {
+    padding-left: 20px;
+    transform:scale(1.0,1.15);
+    color:#0000FF;
+}
+
+.blue-links {
+    color:#0000FF;
+    font-family: Helvetica;
+}
+.blue-links:visited {
+    color:#0000FF;
+}
+
+
+/* containers */
+.landing-container{
+    display: flex;
+    background-image: url("ass/nerd.png");
+    background-size: 100% 100%;
+    /* background-color:red; */
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.landing-children{
+    margin:20px;
+}
