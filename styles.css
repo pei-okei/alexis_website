@@ -21,21 +21,50 @@
 
 /* text styles */ 
 h1 {
-    color:#0000FF;
-    font-family: Helvetica;
-    transform:scale(1.0,1.5);
+    color:#fff7e3;
+    font-family: futura;
+    font-size:48px;
+    font-weight:200;
+    /* transform:scale(1.0,1.5); */
+}
+
+h2 {
+    color:#fff7e3;
+    font-family: futura;
+    font-size:20px;
+    font-weight:500;
 }
 
 p {
-    color:#0000FF;
-    font-family: Helvetica;
+    color:#243540;
+    font-family: futura;
     font-weight:400;
 }
 
 ul {
     padding-left: 20px;
-    transform:scale(1.0,1.15);
-    color:#0000FF;
+    /* transform:scale(1.0,1.15); */
+    /* color:#0000FF; */
+    color:#243540;
+}
+
+.text-link {
+    font-family:futura;
+    color:#243540;
+}
+.text-link:hover{
+    color:#697336;
+}
+.text-link:visited{
+    color:#243540;
+}
+
+.dj-tag{
+    position:relative; 
+    margin:10px; 
+    text-align:right; 
+    color:#697336; 
+    font-family:futura;
 }
 
 .blue-links {
@@ -45,15 +74,31 @@ ul {
 .blue-links:visited {
     color:#0000FF;
 }
+
 .nav-links {
     color:inherit;
     font-family: futura;
     text-decoration: none;
 }
 
+
+
 /* containers */
 :root{
     --nav-height: 36px;
+}
+.nav-container {
+    position:sticky;
+    top:-1px;
+    z-index: 100;
+    display:flex;
+    background-color: #fff7e3;
+    height:var(--nav-height);
+    gap:0px;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    font-size:18px;
 }
 .nav-children {
     align-self:stretch;
@@ -104,19 +149,6 @@ ul {
     background-color:#ad5221;
     letter-spacing: 0.1em;
 }
-
-.nav-container {
-    position:sticky;
-    top:-1px;
-    z-index: 100;
-    display:flex;
-    background-color: #fff7e3;
-    height:var(--nav-height);
-    gap:0px;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items:center;
-}
 .landing-container{
     display: flex;
     background-image: url("ass/nerd.png");
@@ -125,4 +157,18 @@ ul {
     gap:40px;
     flex-wrap:wrap;
     justify-content: space-between;
+}
+
+
+
+/* adjustments for small screens */
+@media only screen and (max-width: 600px){
+    :root{
+        --nav-height:24px;
+    }
+    .nav-container{
+        height:calc(var(--nav-height) * 5);
+        flex-direction:column;
+        font-size:12px;
+    }
 }
