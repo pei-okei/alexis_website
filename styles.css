@@ -134,49 +134,51 @@ ul {
     line-height:var(--nav-height);
     transition: 0.5s ease-in-out 0.1s;
 }
+.nav-children:hover {
+    letter-spacing: 0.1em;
+}
+.nav-perma {
+    color:#243540;
+    background-color:#fff7e3;
+    letter-spacing: 0.1em
+}
+.nav-blue {
+    color:#fa732a;
+    background-color:#243540;
+}
+.nav-green {
+    color:#f0b824;
+    background-color:#697336;
+}
+.nav-yellow {
+    color:#59690b;
+    background-color:#f0b824;
+}
+.nav-red {
+    color:#f0b824;
+    background-color:#ad5221;
+}
 .hover-blue:hover {
     color:#fa732a;
     background-color:#243540;
-    letter-spacing: 0.1em;
+    
 }
 .hover-green:hover {
     color:#f0b824;
     background-color:#697336;
-    letter-spacing: 0.1em;
 }
 .hover-yellow:hover {
     color:#59690b;
     background-color:#f0b824;
-    letter-spacing: 0.1em;
 }
 .hover-red:hover {
     color:#f0b824;
     background-color:#ad5221;
-    letter-spacing: 0.1em;
 }
-.perma-blue {
-    color:#fa732a;
-    background-color:#243540;
-    letter-spacing: 0.1em;
-}
-.perma-green {
-    color:#f0b824;
-    background-color:#697336;
-    letter-spacing: 0.1em;
-}
-.perma-yellow {
-    color:#59690b;
-    background-color:#f0b824;
-    letter-spacing: 0.1em;
-}
-.perma-red {
-    color:#f0b824;
-    background-color:#ad5221;
-    letter-spacing: 0.1em;
-}
+
 .landing-container{
     display: flex;
-    background-image: url("ass/nerd.png");
+    background-image: url("ass/A1205_OLD_2851395090776064.png");
     background-size: 100% 100%;
     /* background-color:red; */
     gap:40px;
